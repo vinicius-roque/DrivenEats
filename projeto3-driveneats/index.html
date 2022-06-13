@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="reset.css"/>
+    
+    <title>DrivenEats</title>
+</head>
+<body>
+    <div class="content">
+        <div class="topo">
+            <div class="marca">DrivenEats</div>
+            <div class="caracteristica">Sua comida em 6 minutos</div>
+        </div>
+
+        <div class="titulo">
+            <div class="tituloCategoria">Primeiro, seu prato</div>
+        </div>
+
+        <div class="escolherAlimento">
+            <div class="opcoes prato">
+                <div class="alimento1" onclick="selecionarPrato(this, 14.90)">
+                    <img src="./imagens/img/frango_yin_yang 1.png" class="imagemComida">
+                    <p class="nomeAlimento">Frango Yin Yang</p>
+                    <p class="descricaoAlimento">Um pouco de batata, um pouco de salada</p>
+                    <p class="precoAlimento">R$ 14,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                
+                <div class="alimento2" onclick="selecionarPrato(this, 16.90)">
+                    <img src="./imagens/img/frango_yin_yang 2.png" class="imagemComida">
+                    <p class="nomeAlimento">Frango Yin Yang</p>
+                    <p class="descricaoAlimento">Um pouco de batata, um pouco de frango</p>
+                    <p class="precoAlimento">R$ 16,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+
+                <div class="alimento3" onclick="selecionarPrato(this, 15.90)">
+                    <img src="./imagens/img/frango_yin_yang 2.png" class="imagemComida">
+                    <p class="nomeAlimento">Frango Yin Yang</p>
+                    <p class="descricaoAlimento">Um pouco de frango, um pouco de salada</p>
+                    <p class="precoAlimento">R$ 15,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <div class="tituloCategoria">Agora, sua bebida</div>
+        </div>
+
+        <div class="escolherAlimento">
+            <div class="opcoes bebida">
+                <div class="alimento1" onclick="selecionarBebida(this, 4.90)">
+                    <img src="./imagens/img/coquinha_gelada 1.png" class="imagemComida">
+                    <p class="nomeAlimento">Coquinha gelada</p>
+                    <p class="descricaoAlimento">Lata 350 ml </br>(1 unidade)</p>
+                    <p class="precoAlimento">R$ 4,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                
+                <div class="alimento2" onclick="selecionarBebida(this, 9.80)">
+                    <img src="./imagens/img/coquinha_gelada 2.png" class="imagemComida">
+                    <p class="nomeAlimento">Coquinha gelada</p>
+                    <p class="descricaoAlimento">Lata 350ml </br>(2 unidades)</p>
+                    <p class="precoAlimento">R$ 9,80</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+
+                <div class="alimento3" onclick="selecionarBebida(this, 10.99)">
+                    <img src="./imagens/img/coquinha_gelada 2.png" class="imagemComida">
+                    <p class="nomeAlimento">Coquinha gelada</p>
+                    <p class="descricaoAlimento">3 Latas 350ml (Promoção)</p>
+                    <p class="precoAlimento">R$ 10,99</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <div class="tituloCategoria">Por fim, sua sobremesa</div>
+        </div>
+
+        <div class="escolherAlimento">
+            <div class="opcoes sobremesa">
+                <div class="alimento1 distanciaBorda" onclick="selecionarSobremesa(this, 7.90)">
+                    <img src="./imagens/img/pudim 1.png" class="imagemComida">
+                    <p class="nomeAlimento">Pudim</p>
+                    <p class="descricaoAlimento">Apenas um incrível pudim tradicional</p>
+                    <p class="precoAlimento">R$ 7,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                
+                <div class="alimento2 distanciaBorda" onclick="selecionarSobremesa(this, 8.49)">
+                    <img src="./imagens/img/pudim 2.png" class="imagemComida">
+                    <p class="nomeAlimento">Pudim</p>
+                    <p class="descricaoAlimento">Um delicioso pudim de leite condensado</p>
+                    <p class="precoAlimento">R$ 8,49</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+
+                <div class="alimento3 distanciaBorda" onclick="selecionarSobremesa(this, 6.99)">
+                    <img src="./imagens/img/pudim 2.png" class="imagemComida">
+                    <p class="nomeAlimento">Pudim</p>
+                    <p class="descricaoAlimento">Um belo pudim de leite branco da vaca preta</p>
+                    <p class="precoAlimento">R$ 6,99</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="barraFecharPedido">
+            <button class="pedidoBloqueado">Selecione os 3 itens </br> para fechar o pedido</button>
+            <button class="pedidoLiberado hide" onclick="avancar()">Fechar pedido</button>
+        </div>
+
+        <div class="validar hide">
+            <div class="confirmacao">
+              <div>
+                <h1>Confirme seu pedido</h1>
+              </div>
+              <div class="prato">
+                <p>Prato</p>
+                <p>Preço</p>
+              </div>
+              <div class="bebida">
+                <p>Bebida</p>
+                <p>Preço</p>
+              </div>
+              <div class="sobremesa">
+                <p>Sobremesa</p>
+                <p>Preço</p>
+              </div>
+              <div class="total">
+                <h1>TOTAL</h1>
+                <h1>Preço</h1>
+              </div>
+              <div>
+                <button onclick="fecharPedido()">Tudo certo, pode pedir!</button>
+              </div>
+              <div>
+                <h2 onclick="voltar()">Cancelar</h2>
+              </div>
+            </div>
+          </div>
+
+        
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

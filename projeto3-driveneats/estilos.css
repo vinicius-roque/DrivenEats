@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+@media (max-width: 414px) {
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Righteous', cursive;
+        height: 980px;
+        background-color: #E5E5E5;
+    }
+
+    .content {
+        margin: 92px 0 92px 0;
+        padding: 10px 0 0 0; 
+    } 
+
+    .topo {
+        background-color: #CF2B2B;
+        width: 414px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .marca {
+        font-family: 'Righteous', cursive;
+        color: #FFFFFF;
+        font-size: 44px;
+        margin: 20px auto auto 20px;
+    }
+
+    .caracteristica {
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+        font-size: 18px;
+        margin: auto auto 25px 20px;
+    }
+
+    .tituloCategoria {
+        font-family: 'Righteous', cursive;
+        font-size: 26px;
+        color: #333333;
+        margin: 30px auto auto 20px;
+    }
+
+    .escolherAlimento {
+        overflow-x: scroll;
+        margin-right: 15px;
+    }
+
+    .opcoes {
+        font-family: 'Roboto', sans-serif;
+        margin: 10px auto 10px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .opcoes div:hover {
+        cursor: pointer;
+    }
+
+    .opcoes ion-icon{
+        font-size: 19px;
+        color: rgba(0, 0, 0, 0);
+        position: absolute;
+        right: 14px;
+        bottom: 12px;
+    }
+
+    .opcoes div.selecionado {
+        border-color: #32B72F;
+    }
+
+    .imagemComida {
+        width: 144px;
+        height: 87px;
+        border-radius: 4px;
+        margin: 15px 12px 10px 10px;
+    }
+
+    .nomeAlimento {
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        margin: auto auto 10px 11px;
+    }
+
+    .descricaoAlimento {
+        color: #A6A6A6;
+        margin: auto auto 10px 10px;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    .precoAlimento {
+        color: #000000;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .alimento1 {
+        font-family: 'Roboto', sans-serif;
+        width: 172px;
+        height: 216px;
+        background-color: #FFFFFF;
+        border-radius: 9px;
+        margin-left: 10px;
+        border: solid 4px #FFFFFF;
+        box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.25);
+    }
+
+    .alimento2 {
+        font-family: 'Roboto', sans-serif;
+        width: 172px;
+        height: 216px;
+        background-color: #FFFFFF;
+        border-radius: 9px;
+        margin-left: 15px;
+        border: solid 4px #FFFFFF;
+        box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.25);
+    }
+
+    .alimento3 {
+        font-family: 'Roboto', sans-serif;
+        width: 172px;
+        height: 216px;
+        background-color: #FFFFFF;
+        border-radius: 9px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border: solid 4px #FFFFFF;
+        box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.25);
+    }
+
+    .barraFecharPedido {
+        width: 100%;
+        height: 92px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .barraFecharPedido button {
+        width: 364px;
+        height: 61px;
+        border-width: 0;
+        border-radius: 50px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .pedidoBloqueado {
+        font-family: 'Roboto', sans-serif;
+        background-color: #cbcbcb;
+    }
+
+    .pedidoLiberado {
+        font-family: 'Roboto', sans-serif;
+        background-color: #32B72F;
+    }
+
+    .pedidoLiberado:hover {
+        cursor: pointer;
+    }
+    
+    .hide {
+        display: none;
+    }
+
+    .validar{
+        position: absolute;
+        background-color:rgba(255, 255, 255, 0.85);
+        width: 100vw;
+        max-width: 600px;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+    }
+
+    .confirmacao{
+        font-family: 'Roboto', sans-serif;
+        width: 377px;
+        height: 353px;
+        background-color: #50d074;
+        border-radius: 9px;
+        position: fixed;
+        margin-left: -20px;
+        
+        top: calc(50% - 377px/2);
+        left: calc(50% - 353px/2);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: #ffffff;
+    }
+
+    .confirmacao div {
+        width: 326px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .confirmacao div:nth-child(1), div:nth-child(6), div:nth-child(7) {
+        justify-content: center;
+    }
+    
+    .confirmacao h1 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+    
+    .confirmacao h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 15px 0;
+    }
+    
+    .confirmacao button {
+        border: 0;
+        border-radius: 100px;
+        width: 329px;
+        height: 52px;
+        background-color: #ffffff;
+        color: #50D074;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    .confirmacao button:hover, h2:hover {
+        cursor: pointer;
+    }
+}
